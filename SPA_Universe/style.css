@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#app {
+  height: 100%;
+}
+
+#wallpapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Certifique-se de que a imagem está atrás do conteúdo */
+}
+
+#wallpapper img{
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço */
+}
+
+nav {
+  position: relative;
+  margin-left: 7.2rem;
+  align-items: center;
+  padding-block: 4rem;
+  display: flex;
+  gap: 3.2rem;
+  z-index: 1; /* Certifique-se de que o nav está na frente da imagem */
+}
+
+nav a {
+  display: inline-block; /* Garante que o link ao redor da imagem seja clicável */
+  font-size: 1.6rem;
+  color: #C4C4CC;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  position: relative; /* Adicionado */
+  z-index: 1; /* Adicionado */
+}
+
+nav a img {
+  display: block; /* Garante que a imagem ocupe todo o espaço do link */
+  margin-right: 0; /* Remove a margem */
+}
+
+nav a:hover, nav a:focus {
+  color: #FFFFFF;
+}
+#pag1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65%; /* Garante que o pag1 ocupe toda a altura */
+  text-align: center; /* Centraliza o texto */
+}
+#pag1 h1, #pag2 h1, #pag3 h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.8rem;
+  line-height: 125%;
+  margin-bottom: 2.4rem;
+  color: #E1E1E6;
+}
+#pag1 button {
+    background: transparent; /* Fundo transparente */
+    border: 2px solid white; /* Remove bordas */
+    color: #E1E1E6; /* Inherit text color */
+    font: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.4rem; /* Inherit font properties */
+    cursor: pointer; /* Define cursor como pointer */
+    max-width: 19.5rem;
+    max-height: 4.8rem;
+    padding: 1.2rem 3.2rem; /* Remove padding */
+    margin: 0; /* Remove margin */
+    box-shadow: none; /* Remove qualquer sombra */
+    appearance: none; /* Remove estilos específicos do navegador */
+  }
+#pag2 p, #pag3 p{
+  color: #E1E1E6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+#pag2, #pag3{
+max-height: 26.3rem;
+max-width: 64.8rem;
+margin-left: 10.2rem;
+margin-top: 6.3rem;
+}
